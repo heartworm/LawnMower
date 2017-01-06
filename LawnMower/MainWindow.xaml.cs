@@ -42,9 +42,9 @@ namespace LawnMower {
             c.sendGetData();
         }
 
-        public void showData(int pulseLength, bool running, double rpm) {
-            txtData.Text = String.Format("PulseLength: {0}\nRunning: {1}\nRotInt: {2}\n", 
-                pulseLength, running, rpm);
+        public void showData(int pulseLength, bool running, bool revLimit, double rpm) {
+            txtData.Text = String.Format("PulseLength: {0}\nRunning: {1}\nLimiter: {2}\nRotInt: {3}\n", 
+                pulseLength, running, revLimit, rpm);
         }
 
         public void errorQuit(string msg) {

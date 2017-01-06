@@ -11,3 +11,4 @@ C:\Users\Shravan\Documents\Visual Studio 2015\Projects\LawnMower\LawnMower\obj\R
 C:\Users\Shravan\Documents\Visual Studio 2015\Projects\LawnMower\LawnMower\obj\Release\LawnMower.csproj.GenerateResource.Cache
 C:\Users\Shravan\Documents\Visual Studio 2015\Projects\LawnMower\LawnMower\obj\Release\LawnMower.exe
 C:\Users\Shravan\Documents\Visual Studio 2015\Projects\LawnMower\LawnMower\obj\Release\LawnMower.pdb
+C:\Users\Shravan\Documents\Visual Studio 2015\Projects\LawnMower\LawnMower\obj\Release\LawnMower.csprojResolveAssemblyReference.cache

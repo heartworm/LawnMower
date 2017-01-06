@@ -114,13 +114,14 @@ namespace LawnMower {
             byte hdr = rxBuf[0];
             switch (hdr) {
                 case HDR_GETDATA:
-                    if (rxNew != 5) return;
+                    if (rxNew != 6) return;
                     int pulseWidth = rxBuf[1];
                     bool running = Convert.ToBoolean(rxBuf[2]);
-                    double rpm = running ? 60 / (((int)((rxBuf[3] << 8) | rxBuf[4])) * 0.000016) : 0;
+                    bool revLimit = Convert.ToBoolean(rxBuf[3]);
+                    double rpm = running ? 60 / (((int)((rxBuf[4] << 8) | rxBuf[5])) * 0.000016) : 0;
                     try {
                         curDispatcher.Invoke(() => {
-                            win.showData(pulseWidth, running, rpm);
+                            win.showData(pulseWidth, running, revLimit, rpm);
                         });
                     } catch (TaskCanceledException e) {
                         Console.WriteLine(e.ToString());
